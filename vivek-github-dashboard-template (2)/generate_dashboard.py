@@ -47,24 +47,12 @@ svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" view
 
 <rect x="20" y="20" width="1160" height="62" rx="10" class="panel"/>
 <circle cx="48" cy="51" r="7" fill="#ff5f57"/><circle cx="70" cy="51" r="7" fill="#febc2e"/><circle cx="92" cy="51" r="7" fill="#28c840"/>
-svg += text(45,138,"PROFILE","title")
-svg += '<line x1="45" y1="154" x2="375" y2="154" stroke="#26394e"/>'
-
-photo_path = BASE / "assets" / "profile.png"
-photo_data = base64.b64encode(photo_path.read_bytes()).decode("ascii")
-
-svg += '<defs><clipPath id="profilePhoto"><circle cx="210" cy="290" r="105"/></clipPath></defs>'
-svg += '<circle cx="210" cy="290" r="105" fill="#273241" stroke="#4778a8" stroke-width="2"/>'
-svg += '<image href="data:image/png;base64,{}" x="105" y="185" width="210" height="210" preserveAspectRatio="xMidYMid slice" clip-path="url(#profilePhoto)"/>'.format(photo_data)
+'''
 svg += text(120,57,"~/profile.md")
 svg += text(1150,57,"BUILD • LEARN • IMPROVE • REPEAT","muted","end")
 
-svg += text(45,138,"PROFILE","title")
-svg += '<line x1="45" y1="154" x2="375" y2="154" stroke="#26394e"/>'
-svg += '<circle cx="210" cy="290" r="105" fill="#273241" stroke="#4778a8" stroke-width="2"/>'
-svg += text(210,285,"YOUR PHOTO","muted","middle")
-svg += text(210,312,"ADD IMAGE HERE","muted","middle")svg += '''<rect x="20" y="102" width="380" height="380" rx="10" class="panel"/>
-
+svg += '''<rect x="20" y="102" width="380" height="380" rx="10" class="panel"/>
+'''
 svg += text(45,138,"PROFILE","title")
 svg += '<line x1="45" y1="154" x2="375" y2="154" stroke="#26394e"/>'
 svg += '<circle cx="210" cy="290" r="105" fill="#273241" stroke="#4778a8" stroke-width="2"/>'
@@ -85,7 +73,7 @@ for y, label, key in [(348,"Location","location"),(375,"Education","education"),
     svg += text(445,y,label) + text(650,y,d.get(key,""),"value")
 
 svg += '''<rect x="20" y="502" width="370" height="170" rx="10" class="panel"/>
-''
+'''
 svg += text(45,538,"STATS","title")
 svg += '<line x1="45" y1="552" x2="365" y2="552" stroke="#26394e"/>'
 for x, key, label in [(105,"repositories","Repositories"),(205,"profile_views","Profile Views"),(305,"followers","Followers")]:
@@ -133,13 +121,3 @@ svg += "</svg>"
 
 OUT.write_text(svg, encoding="utf-8")
 print("Generated:", OUT)
-svg += text(45,138,"PROFILE","title")
-svg += '<line x1="45" y1="154" x2="375" y2="154" stroke="#26394e"/>'
-
-photo_path = BASE / "assets" / "profile.png"
-photo_data = base64.b64encode(photo_path.read_bytes()).decode("ascii")
-
-svg += '<defs><clipPath id="profilePhoto"><circle cx="210" cy="290" r="105"/></clipPath></defs>'
-svg += '<circle cx="210" cy="290" r="105" fill="#273241" stroke="#4778a8" stroke-width="2"/>'
-svg += '<image href="data:image/png;base64,{}" x="105" y="185" width="210" height="210" preserveAspectRatio="xMidYMid slice" clip-path="url(#profilePhoto)"/>'.format(photo_data)	
-
