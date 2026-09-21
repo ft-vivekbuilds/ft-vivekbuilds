@@ -51,13 +51,6 @@ Currently, I'm focused on improving my **Data Structures & Algorithms, Full-Stac
 
 ## 🚀 Featured Projects
 
-### 🔐 PARAKH
-
-An intelligent platform focused on analyzing and managing risk-related information using modern web technologies and AI-assisted workflows.
-
-**Tech:** Next.js • Supabase • TypeScript • AI
-
----
 
 ### 🏛️ Bureaucracy-exe
 
