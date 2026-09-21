@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vivek's Snake // Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">~/ft-vivekbuilds/arcade</div>
+        <h1>🐍 SNAKE<span>_</span></h1>
+      </div>
+      <div class="status"><i></i> ONLINE</div>
+    </header>
+
+    <section class="hud">
+      <div class="stat"><span>SCORE</span><strong id="score">0</strong></div>
+      <div class="stat"><span>HIGH SCORE</span><strong id="high">0</strong></div>
+      <div class="stat"><span>LEVEL</span><strong id="level">1</strong></div>
+      <div class="stat"><span>COMBO</span><strong id="combo">x1</strong></div>
+      <div class="stat"><span>TIME</span><strong id="time">00:00</strong></div>
+    </section>
+
+    <section class="game-wrap">
+      <div class="side-panel left">
+        <h2>POWER UPS</h2>
+        <div id="powers"><div class="power empty">Collect power-ups</div></div>
+        <h2>CONTROLS</h2>
+        <p>WASD / ARROWS<br>SPACE — Pause<br>R — Restart</p>
+      </div>
+
+      <div class="board-wrap">
+        <canvas id="game" width="600" height="600"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="modal">
+            <div class="big">🐍</div>
+            <h2 id="overlayTitle">SNAKE ARCADE</h2>
+            <p id="overlayText">Eat food. Grow. Survive the hazards.</p>
+            <button id="startBtn">START GAME</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-panel right">
+        <h2>MISSION</h2>
+        <p id="mission">Reach 250 points.</p>
+        <div class="progress"><i id="missionBar"></i></div>
+        <h2>FOOD</h2>
+        <div class="legend">
+          <p>● <b>Apple</b> +10</p>
+          <p>◆ <b>Gold</b> +30</p>
+          <p>✦ <b>Star</b> +75</p>
+          <p>● <b>Poison</b> −25</p>
+        </div>
+        <h2>ACHIEVEMENTS</h2>
+        <div id="achievements"></div>
+      </div>
+    </section>
+
+    <section class="mobile-controls">
+      <button data-dir="up">▲</button>
+      <div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div>
+    </section>
+
+    <footer>LEARN → BUILD → DEBUG → IMPROVE → REPEAT <span>•</span> Built by Vivek Kumar</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
