@@ -1,4 +1,8 @@
+<div align="center">
+  <img src="./assets/profile-dashboard.svg" width="100%" alt="Vivek Kumar Profile Dashboard">
+</div>
 
+<br>
 
 # Vivek Kumar
 
