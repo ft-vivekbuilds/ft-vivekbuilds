@@ -1,3 +1,19 @@
+div align="center">
+
+# Vivek Kumar
+
+### Computer Science Engineering Student · Full Stack Developer
+
+**Learn → Build → Debug → Improve → Repeat**
+
+[![GitHub](https://img.shields.io/badge/GitHub-ft--vivekbuilds-181717?style=flat-square&logo=github)](https://github.com/ft-vivekbuilds)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vivek%20Kumar-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/vivekkumar18/)
+[![Email](https://img.shields.io/badge/Email-vk8525747%40gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:vk8525747@gmail.com)
+
+</div>
+
+---
+
 # 👋 Hi, I'm Vivek Kumar
 
 ### 🚀 Computer Science Engineering Student | Full-Stack Developer | AI/ML & DevOps Enthusiast
