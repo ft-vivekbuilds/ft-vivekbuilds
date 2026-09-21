@@ -84,12 +84,6 @@ svg += '<line x1="445" y1="320" x2="1155" y2="320" stroke="#26394e"/>'
 for y, label, key in [(348,"Location","location"),(375,"Education","education"),(402,"Interests","interests"),(429,"Tech Stack","tech_stack"),(456,"Tools","tools"),(483,"Email","email")]:
     svg += text(445,y,label) + text(650,y,d.get(key,""),"value")
 
-svg += '''<rect x="20" y="502" width="370" height="170" rx="10" class="panel"/>
-''
-svg += text(45,538,"STATS","title")
-svg += '<line x1="45" y1="552" x2="365" y2="552" stroke="#26394e"/>'
-for x, key, label in [(105,"repositories","Repositories"),(205,"profile_views","Profile Views"),(305,"followers","Followers")]:
-    svg += text(x,610,d.get(key,""),"value","middle") + text(x,635,label,"muted","middle")
 
 svg += '''<rect x="410" y="502" width="370" height="300" rx="10" class="panel"/>
 '''
