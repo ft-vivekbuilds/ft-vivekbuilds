@@ -165,7 +165,7 @@ I'm currently working toward becoming a developer who can **design, build, deplo
 ## 🔥 Contribution Streak
 
 <p align="center">
-<img src="https://streak-stats.demolab.com?user=vivekkumar1728&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=ft-vivekbuilds&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
